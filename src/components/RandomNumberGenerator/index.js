@@ -6,9 +6,9 @@ class RandomNumber extends Component {
   state = {count: 0}
 
   onCount = () => {
-    this.setState(prevState => ({
-      count: prevState.count + Math.ceil(Math.random() * 100),
-    }))
+    this.setState({
+      count: Math.ceil(Math.random() * 100),
+    })
   }
 
   render() {
